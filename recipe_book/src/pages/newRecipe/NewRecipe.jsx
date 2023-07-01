@@ -68,7 +68,7 @@ export const NewRecipe = () => {
                 </div>
 
                 <div>
-                    <button onClick={() => handleNewAddress()}>Add</button>
+                    <button type='submit' onClick={() => handleNewAddress()}>Add</button>
                 </div>
             </div>
         </div>
