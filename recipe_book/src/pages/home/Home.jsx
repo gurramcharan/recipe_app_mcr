@@ -20,15 +20,15 @@ export const Home = () => {
                     <div className='flex-row'>
                         <h4 className='item-name'>{item.name}</h4>
                     </div>
-                    <div className='flex-row space-between'>
+                    <div className='flex-row space-between align-items large'>
                         <h5>Cuisine Type:</h5>
                         <p>{item.cuisine}</p>
                     </div>
-                    <div className='flex-row space-between'>
+                    <div className='flex-row space-between  align-items large'>
                         <h5>Ingredients:</h5>
                         <Link to={`/recipe/${item.id}`}>{`See Recipe >`}</Link>
                     </div>
-                    <div className='flex-row space-between'>
+                    <div className='flex-row space-between  align-items large'>
                         <h5>Instructions:</h5>
                         <Link to={`/recipe/${item.id}`}>{`See Recipe >`}</Link>
                     </div>
