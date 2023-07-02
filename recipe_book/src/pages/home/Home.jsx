@@ -18,7 +18,7 @@ export const Home = () => {
                     <img src={item.img} alt={item.name} className='img' />
                     </div>
                     <div className='flex-row'>
-                        <h4>{item.name}</h4>
+                        <h4 className='item-name'>{item.name}</h4>
                     </div>
                     <div className='flex-row space-between'>
                         <h5>Cuisine Type:</h5>
@@ -35,7 +35,7 @@ export const Home = () => {
                     <button onClick={() => RecipeDispatch({type: "deleteRecipe", payload: item.id})}>Delete</button>
                 </div>
             ))}
-            <Link to="/newrecipe"><HiOutlinePlusCircle /></Link>
+            <Link className='plus-icon' to="/newrecipe"><HiOutlinePlusCircle /></Link>
         </div>
     </div>
   )

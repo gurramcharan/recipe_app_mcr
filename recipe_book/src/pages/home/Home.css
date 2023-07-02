@@ -1,8 +1,25 @@
 .img{
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
 }
 
-.item.container{
+.item-container{
     width: 250px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+
+.plus-icon{
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.item-name{
+    font-size: 18px;
 }

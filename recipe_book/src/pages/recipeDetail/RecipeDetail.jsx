@@ -1,6 +1,7 @@
 import React, {useContext} from 'react'
 import {useParams} from 'react-router-dom'
 import {RecipeContext} from '../../context/RecipeContext'
+import "./RecipeDetail.css";
 
 export const RecipeDetail = () => {
     const {recipeId} = useParams()
@@ -14,9 +15,9 @@ export const RecipeDetail = () => {
                     <div>
                         <h1>{item.name}</h1>
                     </div>
-                    <div>
+                    <div className='flex-row gap'>
                         <div>
-                            <img src={item.img} alt={item.name}/>
+                            <img className='single-img' src={item.img} alt={item.name}/>
                         </div>
                         <div>
                             <p>Cuisine: {item.cuisine}</p>

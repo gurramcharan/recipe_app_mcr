@@ -1,5 +1,6 @@
 import React, { useContext} from 'react'
 import { RecipeContext } from '../../context/RecipeContext'
+import "./Search.css"
 
 export const Search = () => {
     
@@ -9,11 +10,11 @@ export const Search = () => {
         setSearchValue(e.target.value)
     }
   return (
-    <div className='flex-row'>
+    <div className='flex-row gap align-items'>
         <div>
-            <input type="text" placeholder='Search the Item you want based on type' onChange={(e) => handleSearch(e)} />
+            <input className='search-bar' type="text" placeholder='Search the Item you want...' onChange={(e) => handleSearch(e)} />
         </div>
-        <div className='flex-row'>
+        <div className='flex-row gap large'>
             <label>Filters: </label>
             <div>
                 <input type="radio" name="filtertype" value="name" id="name" checked={(filterType === "name")? true: false} onChange={(e) => setFilterType(e.target.value)} />
